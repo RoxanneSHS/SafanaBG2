@@ -1,0 +1,7 @@
+IF
+Global("BD_SafanKidnap","ar2600",4)
+Delay(6)
+THEN
+RESPONSE #100
+Kill(Myself)
+END

@@ -1,0 +1,11 @@
+IF
+Global("bd_SafanaRomance4","GLOBAL",2)
+Global("bd_SafanaRomance5","GLOBAL",0)
+!Global("bd_safana_romanceactive","global",3)
+Global("Saf2_StartAmn","Global",2)
+InParty("Safana")
+THEN
+RESPONSE #100
+SetGlobal("bd_SafanaRomance5","GLOBAL",1)
+StartDialogNoSet(Player1)
+END
