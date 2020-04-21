@@ -1,0 +1,46 @@
+IF
+Global("Events","Safa01",0)
+PartyHasItem("safurna")
+THEN
+RESPONSE #100
+SetGlobal("Events","Safa01",1)
+CreateCreature("bdsafpi1",[352.290],13) 
+CreateCreature("bdsafpi2",[470.389],13)
+CreateCreature("bdsafpi3",[238.225],13)
+TriggerActivation("Stairs",FALSE)
+END
+
+IF
+Global("Events","Safa01",1)
+Dead("BDSafpi1")
+Dead("BDSafpi2")
+Dead("BDSafpi3")
+InMyArea("Safana")
+Delay(4)
+THEN
+RESPONSE #100
+SetGlobal("Events","Safa01",2)
+ClearAllActions()
+Wait(1)
+StartCutSceneMode()
+Wait(1)
+CreateCreatureObjectDoor("BDSafMam","Safana",0,0,0) 
+Wait(2)
+ActionOverride("BDSafmam",TakePartyItem("safurna"))
+Wait(1)
+ActionOverride("BDSafmam",DestroyItem("safurna"))
+Wait(2)
+GiveItemCreate("safurnb","Safana",1,0,0)
+Wait(1)
+EndCutSceneMode()
+END
+
+IF
+Global("Events","Safa01",2)
+Dead("BDSafMam")
+THEN
+RESPONSE #100
+SetGlobal("Events","Safa01",3)
+SetGlobal("BD_Safadesh","Global",4)
+TriggerActivation("Stairs",TRUE)
+END

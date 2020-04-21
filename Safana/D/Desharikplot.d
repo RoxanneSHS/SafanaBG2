@@ -1,3 +1,5 @@
+BEGIN BDSafMam
+
 INTERJECT PPDesh 7 BD_Safadesh
 ==Safanj IF~InParty("Safana")~THEN~From pirate to pirate, sir...~
 ==PPDesh IF~InParty("Safana")~THEN~Pirate? You? Hohoho...~
@@ -30,6 +32,48 @@ IF~~THEN SafanJ Deshurn2
 ==PPDoor IF~InMyArea("ppdoor")~THEN~I wouldn't risk that, lady. I've seen him kill people for less.~EXIT
 
 CHAIN
+IF~Global("BD_Safadesh","Global",4)~THEN SafanJ Deshurna1
+~I suppose it is a bad idea to try and bring Desharik the empty urn now. We may just become the target of his rage. We better make use of the wardstone as soon as possible.~
+DO~SetGlobal("BD_Safadesh","Global",5)~
+END
+IF~!PartyHasItem("misc8v")~THEN REPLY~Let us search the remaining ship, it should be here.~+ Deshurna2
+IF~PartyHasItem("misc8v")~THEN REPLY~Yes, let's use the wardstone before Desharik gets too nervous.~ + Deshurna2
+++~You're too cautious, Safana, I want to see the pirate's face when we tell him about his mother.~ + Deshurna2
+
+CHAIN
+IF~~THEN SafanJ Deshurna2
+~Our omnipresent authority figure has the last word.~EXIT
+
+CHAIN
 IF WEIGHT #-3 ~GlobalGT("BD_Safadesh","Global",0) !PartyHasItem("Safurna")~THEN PPDesh NoUrnYet
 ~I'm getting impatient. Where is the urn I tasked you to retrieve?~
 =~Don't bother me without it.~EXIT
+
+CHAIN
+IF WEIGHT #-4 ~GlobalGT("BD_Safadesh","Global",0) PartyHasItem("Safurna")~THEN PPDesh theUrnYet
+~I was already getting impatient. Good for you that you kept your word.~
+=~Don't bother me any further.~DO~EscapeArea()~EXIT
+
+CHAIN
+IF WEIGHT #-4 ~GlobalGT("BD_Safadesh","Global",0) PartyHasItem("Safurnb")~THEN PPDesh FalseUrn1
+~I was already getting impatient. Good for you that you kept your word.~
+=~What the hell is this...? What have you done with the ashes?~
+END
+++~It is not our fault but your own. Mama was not happy about your treatment of her remains and decided to break free.~  + FalseUrn2
+++~Mama was quite angry about her boys and may be haunting out there to give them a nice spanking.~ + FalseUrn2
+
+CHAIN
+IF ~~THEN PPDesh FalseUrn2
+~MAMA!!~DO~TakePartyItem("Safurnb") Wait(1) EscapeArea()~EXIT
+
+CHAIN
+IF~AreaCheck("Safa01")~THEN BDSafMam disturb1
+~What the hell is this turmoil, can't a mother rest in peace these days?~
+==SafanJ~We come on behalf of your son Desharik...~
+==BDSafMam~I have no son of that name, lady, I tell you this!~
+==BDSafMam~Would any son use his dead mother's ashes to place a bet in a card game?~
+==SafanJ~Why not - it only goes to show that he saw some value in those remains.~
+==BDSafMam~YOU...you're worse than that scoundrel Desharik and his lousy brother!~
+==SafanJ~Saemon is Desharik's brother?~
+==SafanJ~Then at least one of your sons has held your ashes in high esteem.~
+==BDSafMam~Nobody will ever know that and you will not leave here.~DO~Enemy()~EXIT

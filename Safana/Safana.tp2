@@ -61,6 +61,7 @@ LPF fj_are_structure
 STRING_SET
 239808 @3
 253550 @2
+96650 @11
 
 COPY ~Safana/extend/safa01.are~ ~override~
 
@@ -69,8 +70,32 @@ SAY NAME1 @5
 SAY NAME2 @5
 SAY DESC @6
 
-ADD_JOURNAL @1005 @1006 @1007 @1008 @1009 USING ~Safana/TRA/setup-Safana.tra~
+COPY ~Safana/extend/safurna.itm~ ~override/safurnb.itm~
+SAY NAME1 @5
+SAY NAME2 @5
+SAY DESC @9
 
+COPY ~Safana/extend/bdsafpir.cre~ ~override/bdsafpi1.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+WRITE_ASCII 0x280 ~BDSafpi1~
 
+COPY ~Safana/extend/bdsafpir.cre~ ~override/bdsafpi2.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+WRITE_ASCII 0x280 ~BDSafpi2~
 
+COPY ~Safana/extend/bdsafpir.cre~ ~override/bdsafpi3.cre~
+SAY NAME1 @7
+SAY NAME2 @7
+WRITE_ASCII 0x280 ~BDSafpi3~
+
+COPY ~Safana/extend/BDSafMam.cre~ ~override~
+SAY NAME1 @8
+SAY NAME2 @8
+
+ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/setup-Safana.tra~
+ADD_JOURNAL EXISTING TITLE (#74336) @1009 @1010 USING ~Safana/TRA/setup-Safana.tra~
+
+                            
 
