@@ -102,7 +102,7 @@ SetGlobal("bd_SafanaRomance6","GLOBAL",1)
 END
 
 IF
-OR(17)
+OR(18)
 Global("bd_SafanaRomance1","GLOBAL",1)
 Global("bd_SafanaRomance2","GLOBAL",1)
 Global("bd_SafanaRomance3","GLOBAL",1)
@@ -120,6 +120,7 @@ Global("BD_SafVali1","LOCALS",1)
 Global("BD_TrollComment","LOCALS",1)
 Global("BD_WhereisComment","LOCALS",1)
 Global("SafanEggChange","Global",1)
+Global("BD_Safadesh","Global",2)
 InParty("Safana")
 See(Player1)
 !ActuallyInCombat()
@@ -285,4 +286,13 @@ THEN
 RESPONSE #100
 SetGlobal("BD_Safaerie","LOCALS",1)
 ActionOverride("Aerie",Interact("Safana"))
+END
+
+IF
+Global("BD_Safadesh","Global",1)
+AreaCheck("ar1600")
+See("ppdoor")
+THEN
+RESPONSE #100
+SetGlobal("BD_Safadesh","Global",2)
 END

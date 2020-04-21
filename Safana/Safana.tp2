@@ -22,12 +22,54 @@ EXTEND_BOTTOM ~ar0311.bcs~ ~Safana/extend/ar0311.baf~
 EXTEND_TOP ~ar2600.bcs~ ~Safana/extend/ar2600.baf~
 EXTEND_TOP ~Safand.bcs~ ~Safana/extend/SAFAND.baf~
 EXTEND_BOTTOM ~c6coran.bcs~ ~Safana/extend/Coran.baf~
+EXTEND_BOTTOM ~ar1600.bcs~ ~Safana/extend/ar1600.baf~
+
+COPY_EXISTING ~ar1600.ARE~ ~override~
+LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 677
+    fj_box_top      = 2783
+    fj_box_right    = 819
+    fj_box_bottom   = 2894
+    fj_cursor_idx   = 28
+    fj_vertex_0     = 759 + (2894 << 16)
+    fj_vertex_1     = 819 + (2844 << 16)
+    fj_vertex_2     = 737 + (2782 << 16)
+    fj_vertex_3     = 677 + (2840 << 16)
+    fj_vertex_4     = 759 + (2894 << 16)
+//    fj_flags        = 0
+    fj_loc_x        = 748
+    fj_loc_y        = 2838
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = Safaboat
+    fj_destination_area = SAFA01
+    fj_destination_name = SafaIn
+  END
+  
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 783
+    fj_loc_y       = 2801
+    fj_orientation = 10
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = SafaOut
+  END
 
 STRING_SET
 239808 @3
 253550 @2
 
-ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/setup-Safana.tra~
+COPY ~Safana/extend/safa01.are~ ~override~
+
+COPY ~Safana/extend/safurna.itm~ ~override~
+SAY NAME1 @5
+SAY NAME2 @5
+SAY DESC @6
+
+ADD_JOURNAL @1005 @1006 @1007 @1008 @1009 USING ~Safana/TRA/setup-Safana.tra~
 
 
 

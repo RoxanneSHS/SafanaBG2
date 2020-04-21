@@ -1,0 +1,16 @@
+IF
+Global("Boatdown","ar1600",0)
+THEN
+RESPONSE #100
+SetGlobal("Boatdown","ar1600",1)
+TriggerActivation("Safaboat",FALSE)
+END
+
+IF
+Global("Boatdown","ar1600",1)
+GlobalGT("BD_Safadesh","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("Boatdown","ar1600",2)
+TriggerActivation("Safaboat",TRUE)
+END
