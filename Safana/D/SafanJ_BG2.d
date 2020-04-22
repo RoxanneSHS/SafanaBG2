@@ -276,3 +276,15 @@ IF~~THEN SafanJ EggchangeS
 CHAIN
 IF~~THEN SafanJ EggchangeX
 ~No problem, you just stay here and wait.~DO~StartCutSceneMode() Wait(1) StartCutScene("BD_Safsx")~EXIT
+
+CHAIN
+IF ~Global("Safdrowmale","ar2203",1) ~THEN SafanJ maledrow1
+~I heard many fascinating things about the talents of the male drow. I am tempted to find out how much truth is in those rumours.~
+DO~SetGlobal("Safdrowmale","ar2203",2)~
+END
+++ ~I'm pretty happy with the lover I have and I get everything I need.~ +maledrow2
+++ ~They would serve you regardless of your charm, Safana. They would do the same for any other woman, that's how they are trained.~ + maledrow2
+
+CHAIN
+IF ~~THEN SafanJ maledrow2
+~Spoilsport. I didn't plan to spend the rest of my life in this ugly Underdark. But a woman is allowed some fun while you keep us here.~EXIT

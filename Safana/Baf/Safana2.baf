@@ -102,7 +102,7 @@ SetGlobal("bd_SafanaRomance6","GLOBAL",1)
 END
 
 IF
-OR(19)
+OR(20)
 Global("bd_SafanaRomance1","GLOBAL",1)
 Global("bd_SafanaRomance2","GLOBAL",1)
 Global("bd_SafanaRomance3","GLOBAL",1)
@@ -122,6 +122,7 @@ Global("BD_WhereisComment","LOCALS",1)
 Global("SafanEggChange","Global",1)
 Global("BD_Safadesh","Global",2)
 Global("BD_Safadesh","Global",4)
+Global("Safdrowmale","ar2203",1)
 InParty("Safana")
 See(Player1)
 !ActuallyInCombat()
@@ -326,6 +327,15 @@ RealGlobalTimerExpired("SafHendAffT","ar0406")
 THEN
 RESPONSE #100
 SetGlobal("SafHendAff","ar0406",3)
+END
+
+IF
+Global("Safdrowmale","ar2203",0)
+AreaCheck("ar2203")
+InParty("Safana")
+THEN
+RESPONSE #100
+SetGlobal("Safdrowmale","ar2203",1)
 END
 
 IF
