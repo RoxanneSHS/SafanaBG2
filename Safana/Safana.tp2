@@ -98,5 +98,6 @@ SAY NAME2 @8
 ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/setup-Safana.tra~
 ADD_JOURNAL EXISTING TITLE (#74336) @1009 @1010 USING ~Safana/TRA/setup-Safana.tra~
 
+COPY ~Safana/extend/Safana.2da~ ~override~ REPLACE 82760 @012
 
 
