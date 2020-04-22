@@ -3,5 +3,5 @@ Global("SafLogLT","GLOBAL",1)
 THEN
 RESPONSE #100
 MoveToObject("Safana")
-StartDialogue("Celogan")
+Dialogue("Safana")
 END

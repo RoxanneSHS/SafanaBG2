@@ -169,3 +169,37 @@ END
 I_C_T Finsol01 32 BDSafChoose32
 ==SafanJ IF~InParty("Safana")~THEN~I already knew that <CHARNAME> is a complete fool. This extra proof was not needed. Pfff...~
 END
+
+INTERJECT HENDAK 33 SafHendR1
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~It is so wonderful to see you and your companions free once again. Have you made plans for the future already?~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~My lady, you have played a very important role in our release. My heartfelt thanks go to the <CHARNAME>'s whole group but to you and your courage especially.~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~I will fight slavery with all my might wherever I encounter it, Hendak. (Unless they serve me, of course.)~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~This is good to hear from a friend as powerful as you are, mylady. The new Copper Coronet is no longer a place of such cruelty to humans or beasts.~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~Then I hope that <CHARNAME> will steer our ways to here frequently, my friend.~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~I dearly hope <PRO_HESHE> will, so that I may show my fearless heroine my gratitude for her intervention. ~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",1) ~THEN ~Gratitude is not a good basis for a relationship among people who are equal. Be a proud man once again, Hendak, proud enough to venture for any woman he desires.~
+END HENDAK 210
+
+INTERJECT HENDAK 33 SafHendR2
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~Hendak, I have really longed for seeing you again - and as the man you have a right to be.~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~I was a slave steered by the hands and will of others. You gave me hope - including the strength to no longer hide my feelings. ~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~(Safana has moved close to the aging fighter and has gently taken his hand in the seductive way you know so well.)~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~You are a elusive thief but it seems you know just too well when to let down your defences...~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~(Safana's smile is inviting the former slave to continue.)~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~I have gained back a life but in love I am a lonely man.~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~You are aware that I am just a passing wanderer, seeking rest and shelter for a night every now and then...~
+==HENDAK IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~...and I am an innkeeper to serve her as best as I can. A voluntary slave to the heart of the woman who deserves such commitment.~
+== SafanJ IF~InParty("Safana") Global("SafHendAff","ar0406",3) ~THEN ~I will find me a mistress as gentle as you not have known one before.~
+END HENDAK 211
+
+APPEND HENDAK
+IF~~THEN BEGIN 210
+SAY~Please, <CHARNAME> do not make the time to your next visit too long. ~
+IF~~THEN DO ~SetGlobal("SafHendAff","ar0406",2)RealSetGlobalTimer("SafHendAffT","ar0406",1200)~EXIT
+END 
+
+IF~~THEN BEGIN 211
+SAY~You are a wonderful woman, Safana. ~
+IF~~THEN DO ~SetGlobal("SafHendAff","ar0406",4)RealSetGlobalTimer("SafHendAffT","ar0406",1200) RestParty()~EXIT
+END 
+END

@@ -308,6 +308,27 @@ AddJournalEntry(@1010,QUEST_DONE)
 END
 
 IF
+AreaCheck("ar0406")
+See("Hendak")
+Global("SafHendAff","ar0406",0)
+OR(2)
+Global("HendakReleased","AR0406",3)
+Global("HendakReleased","AR0406",4)
+THEN
+RESPONSE #100
+SetGlobal("SafHendAff","ar0406",1)
+END
+
+IF
+AreaCheck("ar0406")
+Global("SafHendAff","ar0406",2)
+RealGlobalTimerExpired("SafHendAffT","ar0406")
+THEN
+RESPONSE #100
+SetGlobal("SafHendAff","ar0406",3)
+END
+
+IF
 Global("bd_resetconflict","locals",0)
 Gender(Player1,MALE)
 InParty("Safana")
