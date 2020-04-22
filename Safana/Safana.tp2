@@ -3,7 +3,7 @@
 BACKUP ~Safana/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Safana/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.1~
+VERSION ~v0.2~
 
 AUTO_TRA ~Safana/TRA/%s~
 
@@ -21,6 +21,7 @@ COMPILE
 EXTEND_BOTTOM ~ar0311.bcs~ ~Safana/extend/ar0311.baf~
 EXTEND_TOP ~ar2600.bcs~ ~Safana/extend/ar2600.baf~
 EXTEND_TOP ~Safand.bcs~ ~Safana/extend/SAFAND.baf~
+EXTEND_TOP ~celogan.bcs~ ~Safana/extend/Saflogan2.baf~
 EXTEND_BOTTOM ~c6coran.bcs~ ~Safana/extend/Coran.baf~
 EXTEND_BOTTOM ~ar1600.bcs~ ~Safana/extend/ar1600.baf~
 
@@ -97,5 +98,5 @@ SAY NAME2 @8
 ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/setup-Safana.tra~
 ADD_JOURNAL EXISTING TITLE (#74336) @1009 @1010 USING ~Safana/TRA/setup-Safana.tra~
 
-                            
+
 

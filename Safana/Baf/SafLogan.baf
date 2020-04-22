@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("Safana")
+Wait(2)
+ActionOverride("Safana",JumpToPoint([818.240]))
+ActionOverride("Celogan",JumpToPoint([901.312]))
+MoveViewPoint([818.260],INSTANT)
+EndCutSceneMode()
+END
+

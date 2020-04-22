@@ -113,3 +113,59 @@ DO~SetGlobal("BD_Safaerie","LOCALS",2)~
 ==SafanJ~We are your companions and we should matter more to you than unimportant commoners.~
 ==Baerie~B-but all people are of equal value.~
 ==SafanJ~Oh no, Aerie. We are artists of blades or arch-wizards-to-be while they are...nothing.~EXIT
+
+EXTEND_BOTTOM CELOGAN 80
+IF ~
+OR(2)
+!Global("FHFMeetFaren","GLOBAL",1)
+GlobalGT("FHFarenFree","GLOBAL",0)
+OR(2)
+!Global("M#AmberKidnap","GLOBAL",4)
+Global("M#LoganKidnapResponse","Locals",1)
+InParty("Safana")
+Global("SafLogLT","GLOBAL",0)
+~THEN EXTERN CELOGAN SanLog1
+END
+
+CHAIN
+IF~~THEN CELOGAN SanLog1
+~(Logan Coprith's face visibly brightens as he sees Safana in your company)~
+DO~SetGlobal("SafLogLT","GLOBAL",1)~
+==CELOGAN~Greetings, My lady Safana. I had...mh...hoped you would find a way to come to Trademeet again. Might I ask for a moment of your time... in private?~
+==SafanJ~Greetings, Lord Logan. Why should I refuse the request of a respectable gentleman?~
+==CELOGAN~Let me lead on, my lady.~DO~StartCutSceneMode() StartCutScene("SafLogan")~EXIT
+
+CHAIN
+IF WEIGHT #-9~Global("SafLogLT","GLOBAL",1)~THEN CELOGAN SanLog2
+~It is not my way to open easily to a passing stranger. With you however I feel I must take my chance or regret it. You are lovely and strong at the same time. I am sure you hear compliments like this every day.~
+DO~SetGlobal("SafLogLT","GLOBAL",2)~
+==SafanJ~You can be charming when you try. And words heard before may get a different meaning any time they are spoken depending on who says them and for what intend.~
+=~Be assured I grab a moment that may be a very precious one rather than regret my hesitation when it is passed. ~
+==CELOGAN~Since I came to Trademeet I became a man of routine doing only what is my duty day in day out...~
+==SafanJ~Nothing more? (Her smile seems to encourage him.) I very much doubt that. ~
+==CELOGAN~I feel that drowning you in compliments will waste both our time. You are well aware of your impact on men. ~
+==SafanJ~You are of noble family and handsome, you must be used to such attention yourself. ~
+==CELOGAN~(Smiles) Why hide from one like you, yes, I am used to the attention.~
+==SafanJ~You are more a soldier than a merchant and as such a man of deeds rather than a wielder of words, right? ~
+==CELOGAN~Safana? ~
+==SafanJ~Time for a frontal attack. ~
+==CELOGAN~(Nods) You will have no problem to explain the next hour to your companions outside..?~
+==SafanJ~Or may I propose a less rushed rendezvous tonight? ~
+==CELOGAN~Yes, milady, I mean..Safana - this evening. I shall look forward to it. ~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
+EXIT
+
+I_C_T Finsol01 29 BDSafChoose29
+==SafanJ IF~InParty("Safana")~THEN~I already knew that <CHARNAME> is a complete fool. This extra proof was not needed. Pfff...~
+END
+
+I_C_T Finsol01 30 BDSafChoose30
+==SafanJ IF~InParty("Safana")~THEN~I already knew that <CHARNAME> is a complete fool. This extra proof was not needed. Pfff...~
+END
+
+I_C_T Finsol01 31 BDSafChoose31
+==SafanJ IF~InParty("Safana")~THEN~I already knew that <CHARNAME> is a complete fool. This extra proof was not needed. Pfff...~
+END
+
+I_C_T Finsol01 32 BDSafChoose32
+==SafanJ IF~InParty("Safana")~THEN~I already knew that <CHARNAME> is a complete fool. This extra proof was not needed. Pfff...~
+END
