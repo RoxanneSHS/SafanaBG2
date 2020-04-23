@@ -203,3 +203,7 @@ SAY~You are a wonderful woman, Safana. ~
 IF~~THEN DO ~SetGlobal("SafHendAff","ar0406",4)RealSetGlobalTimer("SafHendAffT","ar0406",1200) RestParty()~EXIT
 END 
 END
+
+I_C_T PIRCOR02 13 BD_safginia
+==SafanJ IF~InParty("Safana")~THEN~Tell me again why we are wasting time on her?~
+END
