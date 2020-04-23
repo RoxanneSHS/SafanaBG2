@@ -288,3 +288,29 @@ END
 CHAIN
 IF ~~THEN SafanJ maledrow2
 ~Spoilsport. I didn't plan to spend the rest of my life in this ugly Underdark. But a woman is allowed some fun while you keep us here.~EXIT
+
+CHAIN
+IF~Global("Safbalthded","Locals",1)~THEN SafanJ Baltded1
+~He would have made a valid ally against the traitor we pursue. There is no benefit from Balthazar's death.~
+DO~SetGlobal("Safbalthded","Locals",2)~
+END
+++~Do you start to doubt my decisions, Safana?~ + Baltded2
+++~He would not listen to reasoning, I wished it could have been avoided.~ + Baltded2
+++~In any case he finally would have stood between me and my rightful destiny.~ + Baltded2
+
+CHAIN
+IF~~THEN SafanJ Baltded2
+~I very much question some of your recent decisions. Is it the essence of the God of Murder that rules you, <CHARNAME> or are you still your own <PRO_MANWOMAN>? I am afraid of the answer to that...~EXIT
+
+CHAIN
+IF~Global("Safmelliwarn","Locals",1)~THEN SafanJ Melliwarn1
+~This lady Melissan reeks of betrayal if you ask me, <CHARNAME>.~
+DO~ SetGlobal("Safmelliwarn","Locals",2)~
+END
+++~I'm not asking you. I can make up my own mind without your approval.~ + Melliwarn2
+++~I was thinking the same. But I see currently no other choice than to act like if we were in agreement.~ + Melliwarn2
+++~Our course of action would not change if you were right.~ + Melliwarn2
+
+CHAIN
+IF~~THEN SafanJ Melliwarn2
+~Our choices in this game are rather limited. All we can do is to stay alerted unless we want the knife to get us.~EXIT

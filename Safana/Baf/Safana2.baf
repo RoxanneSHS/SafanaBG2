@@ -102,7 +102,7 @@ SetGlobal("bd_SafanaRomance6","GLOBAL",1)
 END
 
 IF
-OR(20)
+OR(22)
 Global("bd_SafanaRomance1","GLOBAL",1)
 Global("bd_SafanaRomance2","GLOBAL",1)
 Global("bd_SafanaRomance3","GLOBAL",1)
@@ -123,6 +123,8 @@ Global("SafanEggChange","Global",1)
 Global("BD_Safadesh","Global",2)
 Global("BD_Safadesh","Global",4)
 Global("Safdrowmale","ar2203",1)
+Global("Safbalthded","Locals",1)
+Global("Safmelliwarn","Locals",1)
 InParty("Safana")
 See(Player1)
 !ActuallyInCombat()
@@ -336,6 +338,25 @@ InParty("Safana")
 THEN
 RESPONSE #100
 SetGlobal("Safdrowmale","ar2203",1)
+END
+
+IF
+Global("Chapter","Global",21)
+Global("Safbalthded","Locals",0)
+Dead("Balth")
+THEN
+RESPONSE #100
+SetGlobal("Safbalthded","Locals",1)
+END
+
+IF
+GlobalGT("Chapter","Global",19)
+Global("Safmelliwarn","Locals",0)
+GlobalGT("MelissanYagaKillJob","GLOBAL",0)
+!See("Mel01")
+THEN
+RESPONSE #100
+SetGlobal("Safmelliwarn","Locals",1)
 END
 
 IF
