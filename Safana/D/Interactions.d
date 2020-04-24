@@ -207,3 +207,19 @@ END
 I_C_T PIRCOR02 13 BD_safginia
 ==SafanJ IF~InParty("Safana")~THEN~Tell me again why we are wasting time on her?~
 END
+
+I_C_T PPSaem 44 BD_SafKnowHav1
+==SafanJ IF~InParty("Safana")~THEN~Galante? Just like her "galant" captain.~
+==PPSaem IF~InParty("Safana")~THEN~I could not have named her "Exzesus" even if I were tempted to do at a time, Safana, sweet memories and such...~
+==PPSaem IF~InParty("Safana")~THEN~I am sure at least me, I will enjoy this journey, Saemon.~
+END
+
+I_C_T PPSaem3 41 BD_SafKnowHav2
+==SafanJ IF~InParty("Safana")~THEN~Another pleasure trip with my favourite sea captain. The moonlight on the waves and a soft breeze, ah...~
+==PPSaem3 IF~InParty("Safana")~THEN~I just hope the weather will suit your moods, Safana. At this time of year we may have to be flexible in our wishes.~
+==SafanJ IF~InParty("Safana")~THEN~Oh, I know that you are one to make the best out of any situation, Saemon.~
+END
+
+I_C_T Ammerc01 4 BD_SafKnowHav3
+==SafanJ IF~InParty("Safana")~THEN~It is admirable how our friend Saemon gets out of any corner he may have manoeuvred himself into. Wit is something I appreciate in a man, too bad that so few own it.~
+END

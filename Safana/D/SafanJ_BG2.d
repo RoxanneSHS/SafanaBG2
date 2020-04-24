@@ -314,3 +314,10 @@ END
 CHAIN
 IF~~THEN SafanJ Melliwarn2
 ~Our choices in this game are rather limited. All we can do is to stay alerted unless we want the knife to get us.~EXIT
+
+CHAIN
+IF~Global("SafKnowHav1","Global",2)~THEN SafanJ Saemonluv
+~What a man...his wit is almost as fast as mine and his charm is undeniable. If only he could stay in one place for a while longer...~
+DO~SetGlobal("SafKnowHav1","Global",3)~
+=~But then, it wouldn't be him, right?~
+=~(Her face shows an absent dreamy look like you have not yet seen on her before.~EXIT 
