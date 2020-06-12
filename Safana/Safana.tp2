@@ -3,14 +3,15 @@
 BACKUP ~Safana/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Safana/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v0.2~
+VERSION v0.2
 
 AUTO_TRA ~Safana/TRA/%s~
 
-LANGUAGE ~English~ ~english~ ~Safana/TRA/setup-Safana.tra~
+LANGUAGE ~English~ ~english~ ~Safana/TRA/english/setup.tra~
+LANGUAGE ~Russian (by Austin & Arcanecoast Team)~ ~russian~ ~Safana/TRA/russian/setup.tra~
 
 BEGIN
-~Safana in Amn~
+@1012
 REQUIRE_PREDICATE GAME_IS ~ eet~ @1
 
 COMPILE ~Safana/d~
@@ -95,8 +96,8 @@ COPY ~Safana/extend/BDSafMam.cre~ ~override~
 SAY NAME1 @8
 SAY NAME2 @8
 
-ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/setup-Safana.tra~
-ADD_JOURNAL EXISTING TITLE (#74336) @1009 @1010 USING ~Safana/TRA/setup-Safana.tra~
+ADD_JOURNAL @1005 @1006 @1007 @1008 USING ~Safana/TRA/%LANGUAGE%/setup.tra~
+ADD_JOURNAL EXISTING TITLE (#74336) @1009 @1010 USING ~Safana/TRA/%LANGUAGE%/setup.tra~
 
 COPY ~Safana/extend/Safana.2da~ ~override~ REPLACE 82760 @012
 
