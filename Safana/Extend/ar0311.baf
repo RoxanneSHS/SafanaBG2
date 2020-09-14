@@ -1,5 +1,4 @@
 IF
-Global("BD_SAFANA_DIED_IN_BG","GLOBAL",0)
 Global("bd_safana_spawn","ar0311",0)
 BeenInParty("safana")
 !StateCheck("Safana",STATE_REALLY_DEAD)
