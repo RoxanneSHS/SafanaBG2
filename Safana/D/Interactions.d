@@ -223,3 +223,13 @@ END
 I_C_T Ammerc01 4 BD_SafKnowHav3
 ==SafanJ IF~InParty("Safana")~THEN@97
 END
+
+CHAIN
+IF~!InPartySlot(LastTalkedToBy,0) Name("safana",LastTalkedToBy) Global("Sal_safa","LOCALS",0)~THEN Salvanas MeetSafana
+@98
+DO~SetGlobal("Sal_safa","LOCALS",1)~
+==SafanJ@99
+==Salvanas@100
+==SafanJ@101
+==Salvanas@102
+EXIT
