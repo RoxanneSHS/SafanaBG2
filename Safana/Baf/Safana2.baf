@@ -381,3 +381,21 @@ RESPONSE #100
 SetGlobal("bd_resetconflict","locals",1)
 SetGlobal("bd_safana_romanceactive","global",1)
 END
+
+IF
+Global("X#SAMI1","LOCALS",0)
+InParty("Minsc")
+GlobalGT("Chapter","GLOBAL",13)
+THEN
+RESPONSE #100
+SetGlobal("X#SAMI1","LOCALS",1)
+END
+
+IF
+Global("X#SAED1","LOCALS",0)
+InParty("Edwin")
+GlobalGT("Chapter","GLOBAL",13)
+THEN
+RESPONSE #100
+SetGlobal("X#SAED1","LOCALS",1)
+END
