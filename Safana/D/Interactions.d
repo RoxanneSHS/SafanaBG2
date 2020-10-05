@@ -8,7 +8,7 @@ IF WEIGHT #-9~ OR(2) Global("RenalJob","GLOBAL",2)Global("RenalJob","GLOBAL",3) 
 @2
 =@3
 DO~SetGlobal("RenalJob","GLOBAL",4)AddXPObject(Player1,22750) EraseJournalEntry(34194) EraseJournalEntry(34198)
-EraseJournalEntry(34201)EraseJournalEntry(34205)EraseJournalEntry(34207) EraseJournalEntry(34211) EraseJournalEntry(34217) EraseJournalEntry(34218) EraseJournalEntry(34220)EraseJournalEntry(34232) EraseJournalEntry(34233) EraseJournalEntry(34234)EraseJournalEntry(34235) EraseJournalEntry(34236)EraseJournalEntry(34237) EraseJournalEntry(34238) EraseJournalEntry(34240) EraseJournalEntry(34241) 
+EraseJournalEntry(34201)EraseJournalEntry(34205)EraseJournalEntry(34207) EraseJournalEntry(34211) EraseJournalEntry(34217) EraseJournalEntry(34218) EraseJournalEntry(34220)EraseJournalEntry(34232) EraseJournalEntry(34233) EraseJournalEntry(34234)EraseJournalEntry(34235) EraseJournalEntry(34236)EraseJournalEntry(34237) EraseJournalEntry(34238) EraseJournalEntry(34240) EraseJournalEntry(34241)
 EraseJournalEntry(34243)AddXPObject(Player2,22750)AddXPObject(Player3,22750)AddXPObject(Player4,22750) AddXPObject(Player5,22750) AddXPObject(Player6,22750)~
 ==SafanJ@4
 ==Renal@5
@@ -16,7 +16,7 @@ EraseJournalEntry(34243)AddXPObject(Player2,22750)AddXPObject(Player3,22750)AddX
 ==Renal@7
 ==Renal@8
 ==SafanJ@9
-==Renal@10 DO~SetGlobal("PlayerThiefGuild","GLOBAL",1) SetGlobalTimer("JosterReturn","GLOBAL",FIVE_DAYS) SetGlobal("JosterLeave","GLOBAL",1) ~EXIT
+==Renal@10 DO~SetGlobal("PlayerThiefGuild","GLOBAL",1) SetGlobalTimer("JosterReturn","GLOBAL",FIVE_DAYS) Wait(1) SetGlobal("JosterLeave","GLOBAL",1) ~EXIT
 
 INTERJECT_COPY_TRANS DELCIA 0 SafDelc1
 == Delcia IF ~InParty("Safana") InMyArea("Safana")~ THEN @11
