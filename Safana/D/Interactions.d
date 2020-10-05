@@ -7,6 +7,9 @@ CHAIN
 IF WEIGHT #-9~ OR(2) Global("RenalJob","GLOBAL",2)Global("RenalJob","GLOBAL",3) Dead("MaeVar") !Class(Player1,THIEF_ALL) InParty("Safana") ~THEN Renal OfferSaf
 @2
 =@3
+DO~SetGlobal("RenalJob","GLOBAL",4)AddXPObject(Player1,22750) EraseJournalEntry(34194) EraseJournalEntry(34198)
+EraseJournalEntry(34201)EraseJournalEntry(34205)EraseJournalEntry(34207) EraseJournalEntry(34211) EraseJournalEntry(34217) EraseJournalEntry(34218) EraseJournalEntry(34220)EraseJournalEntry(34232) EraseJournalEntry(34233) EraseJournalEntry(34234)EraseJournalEntry(34235) EraseJournalEntry(34236)EraseJournalEntry(34237) EraseJournalEntry(34238) EraseJournalEntry(34240) EraseJournalEntry(34241) 
+EraseJournalEntry(34243)AddXPObject(Player2,22750)AddXPObject(Player3,22750)AddXPObject(Player4,22750) AddXPObject(Player5,22750) AddXPObject(Player6,22750)~
 ==SafanJ@4
 ==Renal@5
 ==Renal@6
