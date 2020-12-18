@@ -236,3 +236,13 @@ DO~SetGlobal("Sal_safa","LOCALS",1)~
 ==SafanJ@101
 ==Salvanas@102
 EXIT
+
+INTERJECT PLAYER1 33 SafanaTreeofLife
+==PLAYER1 IF ~InParty("safana") ~ THEN@170EXTERN SafanJ SafaTreeofLife
+
+CHAIN
+IF ~~ THEN SafanJ SafaTreeofLife
+@171
+== SafanJ @172
+== SafanJ IF ~!Global("bd_Safana_RomanceActive","GLOBAL",2)~THEN @173
+== SafanJ @174COPY_TRANS PLAYER1 33

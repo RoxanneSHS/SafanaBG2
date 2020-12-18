@@ -3,7 +3,7 @@
 BACKUP ~Safana/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Safana/ or roxanne@baldursextendedworld.com~
 
-VERSION v0.2
+VERSION ~v0.4~
 
 AUTO_TRA ~Safana/TRA/%s~
 
