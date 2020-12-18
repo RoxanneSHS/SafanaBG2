@@ -101,8 +101,8 @@
 @100 = ~ Это я, конечно. Я - Сальванас, у которого вы украли сердце, миледи. ~
 @101 = ~ Ты эльф. Жаль. Опыта с эльфами мне на всю жизнь хватило, слышишь! Научись жить без сердца или убейся об стену. Я предпочитаю последнее. ~
 @102 = ~ Кто-то из моих родичей испортил эту прекрасную даму, ох как грустно.~
-@170   = ~Safana, the easy going thief who sees as much to her own advantage as to yours, how reliable is she at this moment?~
-@171   = ~Darling, what's that look? You're afraid of that half defeated has-been-elf?~
-@172   = ~<CHARNAME>, time to get back what he's stolen from you. And then we can collect what those elves we've saved have set aside for the heroes who rescued Suldanessalar. Richess unseen await us.~
-@173   = ~Ha, and that elven General, Sovalidaas, I guess I sparked his candle, darling, if you know what I mean.~
-@174   = ~Let's move, my blade lusts for Irenicus' blood.~
+@170 = ~(Сафана, легкомысленная воровка, которая действует скорее в своих интересах, чем в твоих - насколько она надежна в данный момент?)~
+@171 = ~Дорогуша, что за взгляд? Ты что, боишься этого наполовину побежденного эльфа? ~
+@172 = ~<CHARNAME>, пора вернуть то, что он у тебя украл. А потом сможем собрать то, что эльфы отложили для героев, спасших Сулданесселар. Нас ждут невиданные богатства.~
+@173 = ~Ха, и этот эльфийский генерал Совалидаас… Кажется, я зажгла в нем огонёк – если понимаешь, о чем я. ~
+@174 = ~Пойдем, мой клинок жаждет крови Айреникуса. ~
