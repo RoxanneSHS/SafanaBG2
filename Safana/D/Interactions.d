@@ -13,7 +13,7 @@ EraseJournalEntry(34243)AddXPObject(Player2,22750)AddXPObject(Player3,22750)AddX
 ==SafanJ@4
 ==Renal@5
 ==Renal@6
-==Renal@7
+==Renal@7 DO~SetGlobal("PGQuota","GLOBAL",1)~
 ==Renal@8
 ==SafanJ@9
 ==Renal@10 DO~SetGlobal("PlayerThiefGuild","GLOBAL",1) SetGlobalTimer("JosterReturn","GLOBAL",FIVE_DAYS) Wait(1) SetGlobal("JosterLeave","GLOBAL",1) ~EXIT
