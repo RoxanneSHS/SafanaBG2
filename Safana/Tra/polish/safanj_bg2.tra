@@ -12,7 +12,7 @@
 @11  = ~Sprzedałaś się im?~
 @12  = ~Sprzedałaś im moją skórę?~ 
 @13  = ~Nie, głuptasku. Powiedziałam im tylko, że to bohater Wrót Baldura znajduje się w tym lochu i że mógłby okazać wdzięczność temu, kto stworzy mu szansę ucieczki.~ ~Nie, głuptasku. Powiedziałam im tylko, że to bohaterka Wrót Baldura znajduje się w tym lochu i że mogłaby okazać wdzięczność temu, kto stworzy jej szansę ucieczki.~
-@14  = ~Zgodziłam się tylko na to, by powiedzieć ci, że ich przywódca - ale ten rzeczywisty, nie Gaelan - chce się szybko z tobą zobaczyć. Wszyscy możemy na tym zyskać. To ważne, by mieć sojuszników w Athkatli.~ 
+@14  = ~Zgodziłam się tylko na to, by powiedzieć ci, że ich przywódca – ale ten rzeczywisty, nie Gaelan – chce się szybko z tobą zobaczyć. Wszyscy możemy na tym zyskać. To ważne, by mieć sojuszników w Athkatli.~ 
 @15  = ~Więc o co chodzi?~
 @16  = ~Brzmi rozsądnie. Co proponujesz?~
 @17  = ~Nie wchodzę w układy ze Złodziejami Cienia. Powinnaś o tym wiedzieć.~
@@ -23,7 +23,7 @@
 @22  = ~Ten Mae'Var, widziałam go wcześniej, ale to było jeszcze we Wrotach Baldura.~
 @23  = ~Złodzieje Cienia działają w różnych miejscach. To chyba nic dziwnego, że tam pojechał?~ 
 @24  = ~Co przez to sugerujesz?~
-@25  = ~Widziałam go w Starej Karczmie, naprzeciwko więzienia Płomiennej Pięści, w towarzystwie innych złodziei spoza miasta, ale co ciekawe - było to już po twoim aresztowaniu w Zamku Smoczej Włóczni.~
+@25  = ~Widziałam go w Starej Karczmie, naprzeciwko więzienia Płomiennej Pięści, w towarzystwie innych złodziei spoza miasta, ale co ciekawe – było to już po twoim aresztowaniu w Zamku Smoczej Włóczni.~
 @26  = ~Cały czas mieli na zewnątrz człowieka, który obserwował, co się dzieje przed siedzibą Płomiennej Pięści.~
 @27  = ~Myślisz, że to dlatego, że ja byłem zamknięty w środku?~ ~Myślisz, że to dlatego, że ja byłam zamknięta w środku?~
 @28  = ~Hmm, nikt z ich organizacji nie był wtedy przetrzymywany w więzieniu, na ile mogłem widzieć.~ ~Hmm, nikt z ich organizacji nie był wtedy przetrzymywany w więzieniu, na ile mogłam widzieć.~
@@ -58,7 +58,7 @@
 @57  = ~<CHARNAME>, co się stało z naszymi towarzyszami podróży?~
 @58  = ~Jaheira tu jest.~
 @59  = ~Sandrah jest z nami.~
-@60  = ~Minsc - i Boo - z nami są. Dynaheir...~
+@60  = ~Minsc – i Boo – z nami są. Dynaheir...~
 @61  = ~Wiesz, co się stało z Imoen, prawda?~
 @62  = ~Za kim najbardziej tęsknisz, Safano?~
 @63  = ~Viconia nam towarzyszy.~
@@ -102,4 +102,4 @@
 @101 = ~W tej grze mamy ograniczone ruchy. Możemy jedynie pozostać czujni, by nie dać się dopaść znienacka.~
 @102 = ~Co za mężczyzna... jego umysł jest niemal tak błyskotliwy jak mój, a i uroku nie można mu odmówić. Gdyby tylko potrafił wytrzymać dłużej w jednym miejscu...~
 @103 = ~Ale wtedy nie byłby już sobą, prawda?~
-@104 = ~(W oczach ma nieobecne, rozmarzone spojrzenie, jakiego nigdy wcześniej u niej nie widziałeś.)~ ~(W oczach ma nieobecne, rozmarzone spojrzenie, jakiego nigdy wcześniej u niej nie widziałaś.)~
+@104 = ~(W oczach ma nieobecne, rozmarzone spojrzenie, jakiego nigdy wcześniej u niej nie widziałeś).~ ~(W oczach ma nieobecne, rozmarzone spojrzenie, jakiego nigdy wcześniej u niej nie widziałaś).~
