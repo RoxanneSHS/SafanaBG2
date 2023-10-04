@@ -9,6 +9,7 @@ AUTO_TRA ~Safana/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~Safana/TRA/english/setup.tra~
 LANGUAGE ~Russian (by Austin & Arcanecoast Team)~ ~russian~ ~Safana/TRA/russian/setup.tra~
+LANGUAGE ~Polish (by Aristo)~ ~polish~ ~Safana/Tra/polish/setup.tra~
 
 BEGIN
 @1012
